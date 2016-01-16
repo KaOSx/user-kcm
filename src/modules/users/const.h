@@ -29,7 +29,7 @@
 #define PASSWD "/etc/passwd"
 #define GROUPCONF "/etc/group"
 #define FACES_IMAGE_FOLDER "/usr/share/pixmaps/faces"
-#define DEFAULT_USER_GROUPS "video,audio,power,disk,storage,optical,network,lp,scanner"
+#define DEFAULT_USER_GROUPS "video,audio,network,storage,lp,user,wheel"
 #define ADMIN_GROUP "wheel"
 #define SUDOERSFILE "/etc/sudoers"
 

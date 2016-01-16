@@ -28,7 +28,7 @@ ActionReply
 UsersAuthHelper::add( const QVariantMap& args )
 {
     QProcess* useradd = new QProcess();
-    useradd->start( "/usr/bin/useradd", args["arguments"].toStringList() );
+    useradd->start( "/usr/sbin/useradd", args["arguments"].toStringList() );
     connect( useradd, &QProcess::readyRead,
              [=] ()
     {
@@ -57,7 +57,7 @@ ActionReply
 UsersAuthHelper::remove( const QVariantMap& args )
 {
     QProcess* userdel = new QProcess();
-    userdel->start( "/usr/bin/userdel", args["arguments"].toStringList() );
+    userdel->start( "/usr/sbin/userdel", args["arguments"].toStringList() );
     connect( userdel, &QProcess::readyRead,
              [=] ()
     {
@@ -122,7 +122,7 @@ ActionReply
 UsersAuthHelper::changeaccounttype( const QVariantMap& args )
 {
     QProcess* usermod = new QProcess();
-    usermod->start( "/usr/bin/usermod", args["arguments"].toStringList() );
+    usermod->start( "/usr/sbin/usermod", args["arguments"].toStringList() );
     connect( usermod, &QProcess::readyRead,
              [=] ()
     {
