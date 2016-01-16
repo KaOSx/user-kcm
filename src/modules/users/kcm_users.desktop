@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Service
+Icon=preferences-desktop-user
+Exec=kcmshell5 kcm_users
+
+X-KDE-Library=kcm_users
+X-KDE-ServiceTypes=KCModule
+X-KDE-System-Settings-Parent-Category=accountdetails
+X-KDE-ParentApp=kcontrol
+X-KDE-PluginKeyword=kcm_users
+X-KDE-Keywords=users
+X-KDE-Keywords[x-test]=xxusersxx
+Categories=Qt;KDE;X-KDE-kcm_users
+
+Name=User Accounts
+Name[x-test]=xxUser Accountsxx
+Comment=User Accounts
+Comment[x-test]=xxUser Accountsxx
+
+

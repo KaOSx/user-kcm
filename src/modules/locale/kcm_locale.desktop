@@ -1,0 +1,18 @@
+[Desktop Entry]
+Type=Service
+Icon=preferences-desktop-locale
+Exec=kcmshell5 kcm_locale
+
+X-KDE-Library=kcm_locale
+X-KDE-ServiceTypes=KCModule
+X-KDE-System-Settings-Parent-Category=regionalsettings
+X-KDE-ParentApp=kcontrol
+X-KDE-PluginKeyword=kcm_locale
+X-KDE-Keywords=locale
+X-KDE-Keywords[x-test]=xxkeyboardxx
+Categories=Qt;KDE;X-KDE-settings-kcm_locale
+
+Name=Locale
+Name[x-test]=xxLocalexx
+Comment=Locale Settings
+Comment[x-test]=xxLocale Settingssxx

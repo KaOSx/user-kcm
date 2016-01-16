@@ -1,0 +1,11 @@
+[Domain]
+Name=user-kcm
+Name[x-test]=xxuser-kcmxx
+Icon=kauth-example
+URL=https://github.com/kaosx
+
+[org.kaosx.kcm.locale.save]
+Name=Save Locale Settings
+Description=Save Locale Settings
+Policy=auth_admin
+Persistence=session

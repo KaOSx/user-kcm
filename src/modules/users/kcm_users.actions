@@ -1,0 +1,36 @@
+[Domain]
+Name=user-kcm
+Name[x-test]=xxuser-kcmxx
+Icon=kauth-example
+URL=https://github.com/kaosx
+
+[org.kaosx.kcm.users.add]
+Name=Add User
+Description=Add User
+Policy=auth_admin
+Persistence=session
+
+[org.kaosx.kcm.users.remove]
+Name=Remove User
+Description=Remove User
+Policy=auth_admin
+Persistence=session
+
+[org.kaosx.kcm.users.changepassword]
+Name=Change Password
+Description=Change Password
+Policy=auth_admin
+Persistence=session
+
+[org.kaosx.kcm.users.changeaccounttype]
+Name=Change Account Type
+Description=Change Account Type
+Policy=auth_admin
+Persistence=session
+
+[org.kaosx.kcm.users.changeimage]
+Name=Change Image
+Description=Change Image
+Policy=auth_admin
+Persistence=session
+
