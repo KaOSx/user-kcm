@@ -170,16 +170,16 @@ SupportedLocalesModel::init( SupportedLocalesItem* parent )
     QStringList localeList { LanguageCommon::supportedLocales() };
     for ( const QString localeString : localeList )
     {
-        Locale locale( localeString.toLatin1() );
+        icu::Locale locale( localeString.toLatin1() );
         // Get language and country in current system locale
-        UnicodeString uDisplayLanguage;
-        UnicodeString uDisplayCountry;
+        icu::UnicodeString uDisplayLanguage;
+        icu::UnicodeString uDisplayCountry;
         locale.getDisplayLanguage( locale, uDisplayLanguage );
         locale.getDisplayCountry( locale, uDisplayCountry );
 
         // Capitalize language and country
         UErrorCode status;
-        BreakIterator* titleIterator = BreakIterator::createTitleInstance( locale, status );
+        icu::BreakIterator* titleIterator = BreakIterator::createTitleInstance( locale, status );
         uDisplayLanguage = uDisplayLanguage.toTitle( titleIterator );
         uDisplayCountry = uDisplayCountry.toTitle( titleIterator );
 
@@ -242,7 +242,7 @@ SupportedLocalesModel::init( SupportedLocalesItem* parent )
 icu::UnicodeString
 SupportedLocalesModel::qStringToUnicodeString( const QString& sourceStr )
 {
-    return UnicodeString( static_cast<const ushort*>( sourceStr.utf16() ),
+    return icu::UnicodeString( static_cast<const ushort*>( sourceStr.utf16() ),
                           sourceStr.length() );
 }
 
