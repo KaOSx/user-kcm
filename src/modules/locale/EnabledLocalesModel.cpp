@@ -68,7 +68,7 @@ EnabledLocalesModel::data( const QModelIndex& index, int role ) const
 
     // Capitalize language and country
     UErrorCode status;
-    icu::BreakIterator* titleIterator = BreakIterator::createTitleInstance( locale, status );
+    icu::BreakIterator* titleIterator = icu::BreakIterator::createTitleInstance( locale, status );
     uDisplayLanguage = uDisplayLanguage.toTitle( titleIterator );
     uDisplayCountry = uDisplayCountry.toTitle( titleIterator );
 
